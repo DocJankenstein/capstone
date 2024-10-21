@@ -1,13 +1,13 @@
 import React, { useReducer, useEffect } from"react";
 import {Navigate, Route, Routes, useNavigate} from "react-router-dom";
 import Booking from './Booking';
-import ConfimedBooking from "./ConfirmedBooking";
+import ConfirmedBooking from "./ConfirmedBooking";
 import Header from './Header';
 
 const Main = () => {
 
 const seededRandom = function (seed) {
-var m = 2**35-31;
+var m = 2**35 - 31;
 var a = 185852;
 var s = seed % m;
 return function() {
@@ -35,7 +35,7 @@ return true;
 }
 
 const initialState = {availableTimes: fetchAPI(new Date())}
-const [state, dispatch] = useReducer(reducer, initialState);
+const [state, dispatch] = useReducer(updateTimes, initialState);
 
 function updateTimes(state, date) {
 return { availableTimes: fetchAPI(new Date(date))};

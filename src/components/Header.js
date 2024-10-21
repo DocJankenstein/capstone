@@ -1,6 +1,7 @@
 import React from "react";
-import bannerImg from "../images/restaurantfood.jpg";
 import { Link } from "react-router-dom";
+import bannerImg from "../images/restaurantfood.jpg";
+
 
 const Header = () => {
 return (

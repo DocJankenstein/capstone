@@ -1,10 +1,13 @@
 body{
 width: 100%;
-margin: auto;
+margin:0 auto;
 }
 
 li{
 list-style: none;
+}
+a{
+text-decoration: none;
 }
 
 nav{
@@ -29,20 +32,19 @@ color: #000;
 }
 
 nav ul li a:hover{
-color: rgb(102, 181, 215);
+text-decoration: underline solid #495E57;
 }
 
 .menu-icon{
 display: none;
 cursor: pointer;
-color: #000;
 }
 
 .bar{
 width: 20px;
 height: 3px;
 background-color: #000;
-margin: 5px;
+margin: 5px 0;
 }
 
 .nav-links{
@@ -61,7 +63,7 @@ background-color:#495E57;
 display: flex;
 flex-direction: column;
 align-items: center;
-transition: all 0.5s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
 
 /*header section*/
@@ -83,13 +85,20 @@ font-size: 40px;
 }
 
 h3 {
+font-size: 25px;
+}
+
+.banner p{
 font-size: 20px;
+max-width: 520px;
+line-height: 1.5;
+margin-bottom: 30px;
 }
 
 button {
 background-color: #F4CE14;
-color: #EDEFEE;
-padding: 10px 20px;
+color: black;
+padding: 14px 18px;
 border: none;
 text-decoration: none;
 border-radius: 12px;
@@ -112,7 +121,7 @@ width: 400px;
 
 .banner-img img { 
 width: 100%;
-height: auto;
+height: 400px;
 border-radius: 20px;
 }
 
@@ -139,27 +148,27 @@ border-radius: 2px;
 }
 
 .btnReceive input{
-padding: 10px 15px;
+padding: 12px 16px;
 margin-top: 20px;
 background: #495E57;
-border: none;
-color: #EDEFEE;
-border-radius: 5px;
+color: #fff;
+border: none;;
+border-radius: 4px;
 }
 
 .confirm span{
-color: blueviolet ;
+color: rgb(71, 77, 194) ;
 }
 
 /*menu items*/
 
-menut-container{
+menu-container{
 margin: 110px auto;
 padding: 10px 13%;
 }
 
 .menu-container h2{
-  color: #F4CE14;
+color: #000;
 }
 
 .menu-header{
@@ -173,37 +182,38 @@ flex-wrap: wrap;
 margin-top: 30px;
 display: flex;
 justify-content: space-between;
+align-items: center;
 flex-wrap: wrap;
 gap: 2rem 1rem;
 }
 
 .menu-items{
-/*height: 300px;*/
-width: 300px;
-background: #495E57;
-border-radius: 10px;
+/*height: 400px;*/
+width: 350px;
+background: #a9c8be;
+border-radius: 8px;
 }
 
 .menu-container img{
 width: 100%;
-height: auto;
-border-radius: 10px;
+height: 233px;
+border-radius: 8px;
 }
 
 .menu-content{
 padding: 5px 15px;
 }
 
-.menu-content .heding{
+.menu-content .heading{
 display: flex;
 justify-content: space-between;
 }
 
 .orderbtn{
-padding: 5px 14px;
+padding: 5px 12px;
 margin-bottom: 10px;
 font-size: 16px;
-font-weight: bold;
+font-weight: 600;
 }
 
 footer section{
@@ -214,17 +224,17 @@ align-items: start;
 }
 
 .company-info img{
-margin-top: 20px;
+margin-top: 12px;
 cursor: pointer;
-width: 300px;
+width: 200px;
 }
 
 .company-info p{ 
-width: 300px;
+width: 320px;
 }
 
 footer h3{
-font-size: 20px;
+font-size: 18px;
 }
 
 footer ul{
@@ -232,7 +242,7 @@ padding: 0;
 }
 
 footer ul li{
-padding: 5px 0;
+padding: 8px 0;
 }
 
 @media screen and (max-width: 768px){
@@ -248,12 +258,12 @@ display: none;
 display: flex;
 background:#333333;
 z-index: 1000;
-padding: 10px 0;
+padding: 20px 0;
 }
 
 .navbar{
 background: #fff;
-padding: 10px 10px;
+padding: 10px 8%;
 }
 
 nav ul li a{
@@ -267,12 +277,12 @@ color: #fff;
 display: none;
 }
 
-form, comfirm{
-padding: 10px 10px;
+form, .comfirm{
+padding: 10px 8%;
 }
 
 .header section, .menu-container{
-padding: 10px 10px;
+padding: 10px 8%;
 }
 
 .menu-container{
@@ -288,7 +298,7 @@ width: 100%;
 }
 
 footer section{
-padding: 10px 10px;
+padding: 10px 8%;
 flex-direction: column;
 }
 

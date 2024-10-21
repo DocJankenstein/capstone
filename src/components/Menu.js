@@ -3,41 +3,51 @@ import recipes from "../recipes";
 import Swa1 from "sweetalert2";
 
 const Menu = () => {
-// console.log(recipes);
+// console.log(recipes[0]);
 const handleOrder = (id) => {
-Swal.fire({
-title: "Are you sure?",
+console.log(id);
+
+const swa1WithBoostrapButtons = Swa1.mixin({
+customClass: {
+confirmButton: 'btn btn-success',
+cancelButton: 'btn btn-danger',
+},
+buttonsStyling: false,
+})
+
+swa1WithBoostrapButtons.fire({
+title: "Confirm order?",
 text: "You will not be able to revert this!",
 icon: "warning",
-showCancelButton: true,
-confirmButtonColor: "#3085d6",
-cancelButtonColor: "#d33",
+showCancelButton: false,
 confirmButtonText: "Yes, order it!",
 }).then((result) => {
 if (result.isConfirmed) {
-Swal.fire("Ordered!", "Your order has been placed.", "success");
+swa1WithBoostrapButtons.fire(
+"Ordered!", 
+"Your order has been placed.", 
+"success")
 }
-});
-};
+})
+}
 
 return (
 <div className="menu-container">
 <div className="menu-header">
-<h2>On special this week!</h2>
-<button>Order</button>
+<h2>Our Specials!</h2>
+<button>Online Menu</button>
 </div>
-
 <div className="cards">
 {recipes.map((recipe) => (
 <div key={recipe.id} className="menu-items">
-<div className="menu-item-image">
-<img src={recipe.image} alt={recipe.name} />
-<div className="menu-item-content">
+<img src={recipe.image} alt="" />
+<div className="menu-content">
+<div className="heading">
 <h5>{recipe.title}</h5>
-<p>{recipe.price}</p>
+<p>${recipe.price}</p>
 </div>
 <p>{recipe.description}</p>
-<button className="orderbtn" onClick={() => handleOrder(recipe.id)}>Order</button>
+<button className="oderbtn" onClick={() => handleOrder(recipe.id)}>Order Now</button>
 </div>
 </div>
 ))}

@@ -16,11 +16,11 @@ pass on the best we have to yours!</p>
 <div>
 <h3>Navigation</h3>
 <ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/menu">Menu</a></li>
+<li><a href="Home">Home</a></li>
+<li><a href="About">About</a></li>
+<li><a href="Menu">Menu</a></li>
 <li><a href="Reservations">Reservations</a></li>
-<li><a href="/Login">Login</a></li>
+<li><a href="Login">Login</a></li>
 </ul>
 </div>
 <div>
@@ -34,9 +34,9 @@ pass on the best we have to yours!</p>
 <div>
 <h3>Social Media</h3>
 <ul>
-<li><a href="#"><i className="fab fa-facebook"></i></a></li>
-<li><a href="#"><i className="fab fa-twitter"></i></a></li>
-<li><a href="#"><i className="fab fa-instagram"></i></a></li>
+<li><a href="Facebook">Facebook</a></li>
+<li><a href="Instagram"></a>Instagram</li>
+<li><a href="Twitter"></a>Twitter</li>
 </ul>
 </div>
 </section>
